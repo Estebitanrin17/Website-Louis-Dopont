@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Delicias de colombia </title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+
+    <header>
+        <div class="button-container">
+            <a href="#Inicio" class="button">Inicio</a>
+            <a href="#Menu" class="button">Menu</a>
+            <a href="#reservas" class="button">Reservas</a>
+            <a href="#Eventos" class="button">Eventos</a>
+            <a href="#Precios" class="button">Precios</a>
+            <a href="#Contactanos" class="button">Contactanos</a>
+            <a href="#Contactanos" class="button">Horario de Apertura</a>
+        </div>
+    </header>
+    
+ <main>
+    <section id="Inicio">
+        <div id="fila">
+            <div id="foto">
+                <img src="img/Restaurante.png" alt="foto de la fachada">
+            </div>
+            <div id="info">
+                <img src="img/Logo Francia.png" alt="Logo">
+                <H1>Tradición francesa, pasión en cada plato</H1>
+                <div id="detalle"></div>
+                <p>Restaurante de cocina tradicional francesa, donde cada plato ofrece un sabor auténtico y una experiencia elegante en un ambiente acogedor </p>
+                <article>
+                    <ul>
+        <p>Descubre los sabores de nuestra cocina francesa.</p>
+    </section>
+
+    <section id="Menu">
+        <h2>Menu</h2>
+        <div class="fila">
+            <article>
+                <img src="img/Ratatuile.png" alt="Plato ratatuile">
+                <h3>Ratatuile</h3>
+                <p>Originario de la región de Provenza, <br> 
+                 es un estofado de verduras (berenjena, calabacín, pimientos, cebolla y tomate) <br>
+                 sazonado con hierbas provenzales.</p>
+            </article>
+
+            <article>
+                <img src="img/Quiche Lorraine.png" alt="Plato quiche">
+                <h3>Quiche Lorraine</h3>
+                <p> Una tarta salada rellena de huevos, nata y panceta, <br>
+                    típica de la región de Lorena. Hay muchas variantes <br>
+                    que incluyen queso, cebolla o espinacas.
+                </p>
+            </article>
+
+            <article>
+                <img src="img/Tarte Tatin.png" alt="Plato Tarte">
+                <h3> Tarte Tatin</h3>
+                <p>Un clásico postre de tarta de manzana caramelizada <br>
+                   que se hornea al revés, una delicia crujiente y dulce.
+                </p>
+            </article>
+        </div>
+    
+    </section>
+
+ </main>
+
+    <section id="reservas">
+        <h2>Reservas</h2>
+        <form id="form-reserva">
+            <label for="nombre">Nombre Completo</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+    
+            <label for="email">Correo Electrónico</label>
+            <input type="email" id="email" name="email" placeholder="Tu correo electrónico" required>
+    
+            <label for="telefono">Teléfono</label>
+            <input type="tel" id="telefono" name="telefono" placeholder="Tu teléfono" required>
+    
+            <label for="fecha">Fecha</label>
+            <input type="date" id="fecha" name="fecha" required>
+    
+            <label for="hora">Hora</label>
+            <input type="time" id="hora" name="hora" required>
+    
+            <label for="personas">Número de Personas</label>
+            <input type="number" id="personas" name="personas" min="1" max="20" required>
+    
+            <button type="submit">Reservar Ahora</button>
+        </form>
+    </section>
+
+    <section id="Eventos">
+        <h2>Eventos</h2>
+        <div class="fila">
+            <article>
+                <img src="img/Evento 1.png" alt="Evento 1">
+                <h3>Les Etoiles de Mougins</h3>
+            </article>
+
+            <article>
+                <img src="img/Evento 2.png" alt="Evento 2">
+                <h3>Le Grand Repas</h3>
+            </article>
+        </div>
+
+        <div class="fila">
+            <article>
+                <img src="img/Evento 3.png" alt="Evento 3">
+                <h3>Feria de Gastronomía de Ultramar y Francófona</h3>
+            </article>
+            <article>
+                <img src="img/Evento 4.png" alt="Evento 4">
+                <h3>Taste of Paris</h3>
+            </article>
+         </div>
+
+        </section>
+
+
+        <section id="Precios">
+            <h2>Precios</h2>
+            <div class="fila">
+                <article>
+                    <h3>Ratatuile</h3>
+                    <p>Estofado de verduras de Provenza</p>
+                    <p class="precio">$55.000 pesos</p>
+                </article>
+                <article>
+                    <h3>Quiche Lorraine</h3>
+                    <p>Tarta salada típica de Lorena</p>
+                    <p class="precio">$20.000 pesos</p>
+                </article>
+                <article>
+                    <h3>Tarte Tatin</h3>
+                    <p>Postre de manzana caramelizada</p>
+                    <p class="precio">$25.000 pesos</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="Contactanos">
+            <h2>Contactanos</h2>
+            <p>Comparte con nosotros tus datos de contacto y te enviaremos<br>
+
+                toda la informacón de los medios de pagos.</p>
+                <form action="#">
+                    <input type="text" placeholder="NOMBRES">
+                    <input type="text" placeholder="TELÉFONO">
+                    <input type="text" placeholder="EMAIL">
+                    <select name="" id="">
+                        <option value="">CIUDAD</option>
+                        <option value="Bogotá">Bogotá</option>
+                        <option value="Cali">Cali</option>
+                        <option value="Medellin">Medellin</option>
+                    </select>
+                    <button>ENVIAR</button>
+                </form>
+        </section>
+
+
+ 
+     <section id="horario">
+        <h2>Horario de Apertura</h2>
+        <div class="center-container">
+            <div class="horario-container">
+                <table class="horario">
+                    <tr>
+                        <th>Día</th>
+                        <th>Horario</th>
+                    </tr>
+                    <tr>
+                        <td>Lunes</td>
+                        <td>9:00 AM - 10:00 PM</td>
+                    </tr>
+                    <tr>
+                        <td>Martes</td>
+                        <td>9:00 AM - 10:00 PM</td>
+                    </tr>
+                    <tr>
+                        <td>Miércoles</td>
+                        <td>9:00 AM - 10:00 PM</td>
+                    </tr>
+                    <tr>
+                        <td>Jueves</td>
+                        <td>9:00 AM - 10:00 PM</td>
+                    </tr>
+                    <tr>
+                        <td>Viernes</td>
+                        <td>9:00 AM - 11:00 PM</td>
+                    </tr>
+                    <tr>
+                        <td>Sábado</td>
+                        <td>10:00 AM - 11:00 PM</td>
+                    </tr>
+                    <tr>
+                        <td>Domingo</td>
+                        <td>10:00 AM - 9:00 PM</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </section>
+
+
+    <!--PIE DE PAGINA-->
+    <footer>
+
+        <p>
+            © Todos los derechos reservados<br>
+            contacto@LOUIS.dupont.com<br>
+            +57 3212444445<br>
+            Cr 83 #14 - 22<br>
+        </p>
+
+    </footer>
+        
+</body>
+</html>

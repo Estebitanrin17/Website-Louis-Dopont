@@ -1,0 +1,430 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+body {
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+    justify-content: center;
+    align-items: center;
+    background-color: #1a1a1a;
+
+}
+
+/* Navegación y botones */
+header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+}
+
+.button-container a {
+    background-color: #D4AF37;
+    color: #1a1a1a;
+    padding: 10px 15px;
+    margin: 0 5px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.button-container a:hover {
+    background-color: #BDAA30;
+}
+
+/* Sección de inicio */
+#Inicio {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding-top: 60px;
+    text-align: center;
+    background-color: #222;
+    color: #fff;
+}
+
+#Inicio #foto img {
+    max-width: 300px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+#Inicio #info img {
+    width: 35%;
+    font-size: 45px;
+}
+
+#Inicio h1 {
+    color: #D4AF37;
+    font-size: 32px;
+    font-weight: 700;
+    font-family: "Lato", sans-serif;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#info #detalle {
+    width: 1200px;
+    height: 4px;
+    background: #B22222;
+    margin-bottom: 90px;
+}
+
+#info p {
+    color: #8B7500;
+    font-size: 20px;
+    font-family: "Playfair Display SC", serif;
+}
+
+/* Sección de reservas */
+#reservas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 40px;
+    background-color: #1a1a1a;
+}
+
+#reservas h2 {
+    font-size: 2em;
+    color: #D4AF37;
+    margin-bottom: 20px;
+}
+
+#form-reserva {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 400px;
+    width: 100%;
+    padding: 20px;
+    background-color: #1a1a1a;
+}
+
+#form-reserva label {
+    align-self: flex-start;
+    font-size: 1em;
+    margin-bottom: 5px;
+    color: #ffff;
+}
+
+#form-reserva input[type="text"],
+#form-reserva input[type="email"],
+#form-reserva input[type="tel"],
+#form-reserva input[type="date"],
+#form-reserva input[type="time"],
+#form-reserva input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+#form-reserva button {
+    width: 100%;
+    padding: 10px;
+    background-color: #D4AF37;
+    color: #fff;
+    font-size: 1.1em;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#form-reserva button:hover {
+    background-color: #BDAA30;
+}
+
+/* Sección de menú */
+#Menu {
+    padding: 40px 20px;
+    background-color: #1a1a1a;
+    text-align: center;
+}
+
+#Menu h2 {
+    font-size: 2em;
+    color: #D4AF37;
+    margin-bottom: 20px;
+}
+
+.fila {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+article {
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 300px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+article:hover {
+    transform: translateY(-5px);
+}
+
+article img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+article h3 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+article p {
+    font-size: 0.9em;
+    color: #000080;
+    line-height: 1.4;
+    font-family: "Playfair Display SC", serif;
+}
+
+
+
+/* Sección de eventos */
+#Eventos {
+    padding: 40px 20px;
+    background-color: #1a1a1a;
+    text-align: center;
+}
+
+#Eventos h2 {
+    font-size: 2em;
+    color: #D4AF37;
+    margin-bottom: 20px;
+}
+
+#Eventos .fila {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px; /* Aumenta el espacio entre cuadros */
+}
+
+#Eventos article {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 300px;
+    text-align: center;
+    transition: transform 0.3s;
+    margin: 10px; /* Añade separación adicional */
+}
+
+#Eventos article:hover {
+    transform: translateY(-5px);
+}
+
+#Eventos article img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+#Eventos article h3 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+#Contactanos {
+    padding: 40px 20px;
+    background-color: #1a1a1a; /* Fondo oscuro */
+    text-align: center;
+}
+
+#Contactanos h2 {
+    font-size: 2em;
+    color: #D4AF37; /* Título en dorado */
+    margin-bottom: 20px;
+}
+
+#Contactanos p {
+    color: #fff; /* Texto blanco */
+    font-size: 1.1em;
+    margin-bottom: 30px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+input[type="text"],
+input[type="email"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #D4AF37; /* Borde dorado */
+    border-radius: 5px;
+    background-color: #fff; /* Fondo blanco para los campos */
+    color: #333; /* Texto oscuro en los campos */
+    font-size: 1em;
+}
+
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+select:focus {
+    border-color: #BDAA30; /* Borde más oscuro al enfocar */
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #D4AF37; /* Botón dorado */
+    color: #fff;
+    font-size: 1.1em;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #BDAA30; /* Botón más oscuro al pasar el mouse */
+}
+
+
+#Precios {
+    padding: 40px 20px;
+    background-color: #1a1a1a;
+    text-align: center;
+}
+
+#Precios h2 {
+    font-size: 2em;
+    color: #D4AF37;
+    margin-bottom: 20px;
+}
+
+#Precios .fila {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px; /* Espacio entre artículos */
+}
+
+#Precios article {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 300px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+#Precios article:hover {
+    transform: translateY(-5px);
+}
+
+#Precios article h3 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+#Precios article p {
+    font-size: 1em;
+    color: #8B0000;
+    margin-bottom: 5px;
+    font-family: "Playfair Display SC", serif;
+}
+
+.Precio {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #D4AF37; /* Color dorado para el precio */
+}
+
+footer{
+    background: #000;
+    color: #fff;
+    padding: 40px;
+    text-align: center;
+}
+
+
+
+
+/* Contenedor para centrar el contenido */
+.center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #1a1a1a;
+}
+
+.horario-container {
+    text-align: center;
+    padding: 10px; /* Reducido de 20px a 10px */
+    background-color: #2c2c2c;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    max-width: 400px;
+    width: 90%;
+}
+
+h2 {
+    font-size: 2em;
+    color: #D4AF37;
+    text-align: center;
+    margin-bottom: 10px; /* Reducido de 20px a 10px */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 8px; /* Reducido de 10px a 8px */
+    text-align: center;
+    border: 1px solid #3a3a3a;
+}
+
+th {
+    background-color: #4a4a4a;
+    color: #ffffff;
+}
+
+td {
+    color: #dddddd;
+}
+
+tr:nth-child(even) {
+    background-color: #3a3a3a;
+}
